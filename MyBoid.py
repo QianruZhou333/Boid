@@ -14,7 +14,7 @@ import numpy as np
 class Bird(Sprite):
     def __init__(self, birdOrder, birdData, scene):
         Sprite.__init__(self)
-        self.image = pygame.image.load('image/plane.png')
+        self.image = pygame.image.load('plane.png')
         self.image = pygame.transform.scale(self.image, (30,30))
         self.size_x = 10
         self.size_y = 6
@@ -124,7 +124,7 @@ class MainScene(object):
     def run_scene(self):
         #放音乐
         pygame.mixer.init()
-        music_bg = pygame.mixer.Sound('bird-src/Jibbs-ChainHangLow.mp3')
+        music_bg = pygame.mixer.Sound('Jibbs-ChainHangLow.mp3')
         music_bg.play(loops=-1) #播放音乐（loops=-1循环播放）
         
         clock = pygame.time.Clock()
